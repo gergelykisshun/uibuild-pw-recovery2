@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+a{
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+  
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+  
+textarea {
+    resize: none;
+}
+  
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+  
+/*CSS RESET OVER*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e6e6e6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.content h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 4px;
+    color: #138073;
+}
+
+.content form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #fff;
+}
+
+.content form div {
+    max-width: 520px;
+    padding-inline: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #138073;
+}
+
+.content form span {
+    display: block;
+    font-weight: 500;
+    
+}
+
+.content form input {
+    width: 480px;
+    height: 64px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #999;
+    color: #b3b3b3;
+}
+
+
+@media screen and (max-width:520px) {
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .content form div {
+        width: 100%;
+    }
+
+    .content form input {
+        width: calc(100% - 40px);
+        margin-inline: 20px;
+    }
+
+
+}
